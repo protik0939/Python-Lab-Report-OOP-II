@@ -44,11 +44,11 @@ class ContractEmployee(Employee):
 
 # Test data
 # Permanent Employee
-perm_emp = PermanentEmployee(name="Protik", emp_id=1858, monthly_salary=5000)
+perm_emp = PermanentEmployee(name="Mr X", emp_id=4, monthly_salary=5000)
 print(perm_emp.display_details())
 print(f"Permanent Employee Monthly Salary: ${perm_emp.calculate_salary()}")
 
 # Contract Employee
-cont_emp = ContractEmployee(name="Siyum", emp_id=1837, hourly_rate=20, hours_worked=120)
+cont_emp = ContractEmployee(name="Mr Y", emp_id=3, hourly_rate=20, hours_worked=120)
 print(cont_emp.display_details())
 print(f"Contract Employee Salary: ${cont_emp.calculate_salary()}")
