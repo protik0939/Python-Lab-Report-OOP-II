@@ -13,3 +13,22 @@
 #---------------------------
 
 
+import numpy as np
+
+# Sample temperature data (in degrees Celsius) for several days
+temperatures = np.array([15, 22, 30, 18, 25, 10, 5, 28, 32, 14])
+
+# Define threshold and minimum value
+threshold = 20
+min_value = 10
+
+# Find indices where temperature exceeds the threshold
+indices_above_threshold = np.where(temperatures > threshold)
+
+# Replace temperatures below the threshold with the minimum value
+temperatures_corrected = np.where(temperatures < threshold, min_value, temperatures)
+
+# Display results
+print("Original Temperatures:", temperatures)
+print("Indices where temperature exceeds the threshold:", indices_above_threshold)
+print("Temperatures after replacing those below threshold with minimum value:", temperatures_corrected)
